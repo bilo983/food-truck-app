@@ -1,12 +1,12 @@
 {
   "projects": {
-    "default": "food-truck-729ef"
+    "default": "food-truck-730ef"
   },
   "targets": {
-    "food-truck-729ef": {
+    "food-truck-730ef": {
       "hosting": {
         "employee-preview": [
-          "food-truck-729ef"
+          "food-truck-730ef"
         ]
       }
     }
