@@ -32,3 +32,37 @@
     at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
 [error] 
 [error] Error: Failed to get Firebase project food-truck-729ef. Please make sure the project exists and your account has permission to access it.
+[debug] [2025-07-09T02:36:16.281Z] ----------------------------------------------------------------------
+[debug] [2025-07-09T02:36:16.283Z] Command:       /nix/store/rbdrkcs5kkwpalxcd7c6bnm33lk2955n-nodejs-20.19.0/bin/node /nix/store/fprgfkwna33crhc86jqbf5878piivvgw-firebase-tools-14.7.0/lib/node_modules/firebase-tools/lib/bin/firebase.js deploy --only hosting
+[debug] [2025-07-09T02:36:16.284Z] CLI Version:   14.7.0
+[debug] [2025-07-09T02:36:16.284Z] Platform:      linux
+[debug] [2025-07-09T02:36:16.284Z] Node Version:  v20.19.0
+[debug] [2025-07-09T02:36:16.284Z] Time:          Wed Jul 09 2025 02:36:16 GMT+0000 (Coordinated Universal Time)
+[debug] [2025-07-09T02:36:16.284Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-07-09T02:36:16.500Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-07-09T02:36:16.501Z] > authorizing via signed-in user (franck.belot@gmail.com)
+[debug] [2025-07-09T02:36:16.501Z] [iam] checking project food-truck-729ef for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-07-09T02:36:16.502Z] Checked if tokens are valid: true, expires at: 1752030119347
+[debug] [2025-07-09T02:36:16.503Z] Checked if tokens are valid: true, expires at: 1752030119347
+[debug] [2025-07-09T02:36:16.504Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/food-truck-729ef:testIamPermissions [none]
+[debug] [2025-07-09T02:36:16.504Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/food-truck-729ef:testIamPermissions x-goog-quota-user=projects/food-truck-729ef
+[debug] [2025-07-09T02:36:16.504Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/food-truck-729ef:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-07-09T02:36:16.752Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/food-truck-729ef:testIamPermissions 200
+[debug] [2025-07-09T02:36:16.752Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/food-truck-729ef:testIamPermissions {}
+[debug] [2025-07-09T02:36:16.752Z] [iam] error while checking permissions, command may fail: Authorization failed. This account is missing the following required permissions on project food-truck-729ef:
+
+  firebase.projects.get
+  firebasehosting.sites.update
+[debug] [2025-07-09T02:36:16.753Z] Checked if tokens are valid: true, expires at: 1752030119347
+[debug] [2025-07-09T02:36:16.753Z] Checked if tokens are valid: true, expires at: 1752030119347
+[debug] [2025-07-09T02:36:16.753Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/food-truck-729ef [none]
+[debug] [2025-07-09T02:36:16.942Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/food-truck-729ef 403
+[debug] [2025-07-09T02:36:16.942Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/food-truck-729ef {"error":{"code":403,"message":"The caller does not have permission","status":"PERMISSION_DENIED"}}
+[debug] [2025-07-09T02:36:16.943Z] Request to https://firebase.googleapis.com/v1beta1/projects/food-truck-729ef had HTTP Error: 403, The caller does not have permission
+[debug] [2025-07-09T02:36:16.944Z] FirebaseError: Request to https://firebase.googleapis.com/v1beta1/projects/food-truck-729ef had HTTP Error: 403, The caller does not have permission
+    at responseToError (/nix/store/fprgfkwna33crhc86jqbf5878piivvgw-firebase-tools-14.7.0/lib/node_modules/firebase-tools/lib/responseToError.js:52:12)
+    at RetryOperation._fn (/nix/store/fprgfkwna33crhc86jqbf5878piivvgw-firebase-tools-14.7.0/lib/node_modules/firebase-tools/lib/apiv2.js:312:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to get Firebase project food-truck-729ef. Please make sure the project exists and your account has permission to access it.
